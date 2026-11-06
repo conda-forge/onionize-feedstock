@@ -12,7 +12,7 @@ source:
   sha256: 8129daeec5f1d5340b0a73c5da1277d0e45d1baf5e35237a48f7b0bb295a24a3
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       CARGO_PROFILE_RELEASE_STRIP: symbols
@@ -40,7 +40,7 @@ requirements:
     - ${{ compiler('rust') }}
     - cargo-bundle-licenses
     - cargo-auditable
-    - pkg-config
+    - pkgconf
   host:
     # native-tls uses OpenSSL on Linux, Security.framework on macOS and
     # SChannel on Windows.
